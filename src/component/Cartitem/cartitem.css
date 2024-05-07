@@ -1,0 +1,30 @@
+
+.step-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: bold;
+    padding-top: 5px;
+    border: 2px solid black;
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #000;
+    width: 100%;
+}
+.gutter{
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.cart-border{
+    border-left: #dddddd 1px solid;
+}
+

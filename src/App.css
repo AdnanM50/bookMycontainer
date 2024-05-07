@@ -12,12 +12,12 @@
 }
 .date-hiden{
     .ant-picker-input input{
-        /* border: none; */
+        
         display: none;
     }
     
 }
-.icon-border{
+/* .icon-border{
     border: 2px solid #004ff8;
 }
 .container-border{
@@ -124,4 +124,13 @@
 }
 .icon-size{
     margin-right: 8px;
+    cursor: pointer;
 }
+.setmr{
+    margin-right: 30px;
+    margin-left: 10px;
+}
+.letter-space{
+    letter-spacing: 4px;
+    color: #dddddd;
+} */
