@@ -104,3 +104,9 @@
     margin-right: 16px;
     cursor: pointer;
 }
+
+.ant-footer{
+    .ant-modal-footer{
+        display: none;
+    }
+}

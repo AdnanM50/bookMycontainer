@@ -12,6 +12,7 @@ import { ImProfile } from "react-icons/im";
 import Filtter from "./component/Filtter/filtter";
 import Cartitem from "./component/Cartitem/cartitem";
 import Header from "./component/Header/Header";
+import Navber from "./component/Navber/Navber";
 
 const App = () => {
   const [opene, setOpene] = useState(false);
@@ -29,7 +30,7 @@ const App = () => {
     <>
       <div>
         <div className="my-container">
-          <div className="d-flex justify-content-between ">
+          {/* <div className="d-flex justify-content-between my-3">
             <div className="gap-3 d-flex">
               <Button type="primary" onClick={showDrawere}>
                 <GiHamburgerMenu />
@@ -40,8 +41,9 @@ const App = () => {
               <ImProfile size={32} color="blue" />
               <h5>Client Profile</h5>
             </div>
-          </div>
-
+          </div> */}
+          <Navber/>
+{/* 
           <Drawer
             placement={placement}
             closable={false}
@@ -52,7 +54,7 @@ const App = () => {
               onClick={onClose}
               className="d-flex justify-content-end align-content-end "
             >
-              <RxCross1  style={{ cursor: "pointer"}} />
+              <RxCross1 style={{ cursor: "pointer" }} />
             </div>
             <div style={{ padding: "23px 10px", width: "250px" }} className="">
               <div className="d-flex align-content-center py-4  ">
@@ -90,8 +92,8 @@ const App = () => {
                 <span style={{ margin: "0 0 0 15px" }}>Logout</span>
               </div>
             </div>
-          </Drawer>
-          <div>
+          </Drawer> */}
+          <div className="my-5 ">
             <Header />
             <div className=" d-flex ">
               <Filtter />

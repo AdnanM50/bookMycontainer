@@ -1,0 +1,9 @@
+.justify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-container{
+    max-width: 1440px;
+    margin: 0 auto;
+}

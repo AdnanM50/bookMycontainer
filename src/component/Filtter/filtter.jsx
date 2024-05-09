@@ -13,8 +13,8 @@ const Filtter = () => {
   return (
    
        <div className="aside-w">
-                <div className="d-flex my-2 ">
-                  <h5>Try Our New Feature</h5>
+                <div className="d-flex justify-content-center align-content-center  mb-2 ">
+                  <h6 style={{fontSize:"14px",fontWeight:"500"}}>Try Our New Feature</h6>
                   <Button type="primary" className="mx-3">
                     ODC
                   </Button>
@@ -53,7 +53,7 @@ const Filtter = () => {
                 </div>
                 <div className="filter-group border px-2 my-3">
                   <header className="m-lg-3">
-                    <h6 className="">Brands </h6>
+                    <h6 className="">Included services</h6>
                   </header>
                   <div className="filter-content collapse show" id="collapse_2">
                     <div className="card-body d-flex flex-column m-lg-3">
@@ -112,7 +112,7 @@ const Filtter = () => {
                           defaultChecked=""
                           className="custom-control-input"
                         />
-                        <span className="mx-2">Pick Up</span>
+                        <span className="mx-2">Maersk</span>
                       </label>
                       <label className="custom-control custom-checkbox">
                         <input

@@ -55,7 +55,7 @@ const Header = () => {
           <h5>Date of Loading</h5>
           <span>2021-07-14</span>
           <span className="date-hiden mx-3 ">
-            <DatePicker renderExtraFooter={() => "extra footer"} showTime />
+            <DatePicker showTime />
           </span>
         </div>
         <div className="d-flex justify-content-center align-content-center  px-3">
@@ -72,7 +72,9 @@ const Header = () => {
                 style={{ cursor: "pointer" }}
               />
             </Badge>
-            <Drawer
+            
+          </div>
+          <Drawer
               open={open}
               className="ant-header"
               placement="right"
@@ -82,7 +84,7 @@ const Header = () => {
                 <div className="d-flex justify-content-between align-content-center ">
                   <div>
                     <span className="icon-size" onClick={onClose}>
-                      <IoIosArrowBack style={{cursor:"pointer"}} />
+                      <IoIosArrowBack style={{ cursor: "pointer" }} />
                     </span>
                     <span>Cart Details</span>
                   </div>
@@ -143,9 +145,24 @@ const Header = () => {
                           100$
                         </h6>
                         <div className="border d-flex ">
-                          <span style={{cursor:"pointer"}} className="border py-1 px-3 ">+</span>
-                          <span style={{cursor:"pointer"}} className="border py-1 px-3 ">1</span>
-                          <span style={{cursor:"pointer"}} className="border py-1 px-3 ">- </span>
+                          <span
+                            style={{ cursor: "pointer" }}
+                            className="border py-1 px-3 "
+                          >
+                            +
+                          </span>
+                          <span
+                            style={{ cursor: "pointer" }}
+                            className="border py-1 px-3 "
+                          >
+                            1
+                          </span>
+                          <span
+                            style={{ cursor: "pointer" }}
+                            className="border py-1 px-3 "
+                          >
+                            -{" "}
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -159,18 +176,24 @@ const Header = () => {
                     open={isModalOpen}
                     onOk={handleOk}
                     onCancel={handleCancel}
+                    className="ant-footer"
+
                   >
                     <div className="d-flex justify-content-center align-content-center flex-column text-center ">
                       <p>
                         Your Request Received Successfully! Reference Number
                       </p>
                       <h5>DT12346</h5>
+                      <div>
+                      <Button type="primary" className="mx-3">
+                    OK
+                  </Button>
+                      </div>
                     </div>
                   </Modal>
                 </div>
               </div>
             </Drawer>
-          </div>
         </div>
       </div>
     </div>
